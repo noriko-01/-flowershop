@@ -1,0 +1,91 @@
+/* 全体領域 */
+body{
+		background-image :url("../images/item/back.jpg");
+		background-color: rgba(109, 109, 109, 0.678);
+    background-blend-mode: darken;
+	}
+/* header
+------------------------------------ */
+header .logo a{
+	color: #fff;
+}
+#gnav li a{
+	 color: #fff;
+}
+/* pcのスタイル */
+@media screen and (min-width : 1000px){
+/* main
+------------------------------------------ */
+main{
+	width: 100%;
+	margin-top: 50px;
+	height: 600px;
+
+}
+.box{
+	width:80%;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.829);
+	border-radius: 5px;
+	padding: 20px 10px;
+}
+.box-img{
+width:300px;
+
+}
+.box-text{
+width: 400px;
+padding:10px 50px;
+
+
+}
+
+.box-text,.box-img{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* メニュー
+---------------------------------------------------- */
+#wrap{
+	background-color: #fff;
+}
+}
+
+/*タブレットのスタイル*/
+@media screen and (min-width : 560px) and (max-width : 999px){
+/* main
+------------------------------------------------------ */
+main{
+ background-color: rgba(255, 255, 255, 0.705);
+	border-radius: 5px;
+	width: 96%;
+	margin: 0 auto;
+}
+
+.box-img iframe{
+width: 90%;
+margin : 0 auto;
+display: block;
+margin-bottom: 10px;
+}
+}
+
+/*スマホのスタイル*/
+@media screen and (max-width : 559px){
+	/* main
+	------------------------------------------------------ */
+main{
+ background-color: rgba(255, 255, 255, 0.705);
+	border-radius: 5px;
+	width: 96%;
+	margin: 0 auto;
+}
+
+.box-img iframe{
+width: 90%;
+margin : 0 auto;
+display: block;
+margin-bottom: 10px;
+}
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>contact|huwari</title>
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+
+	<!--リセット---->
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!--共通のスタイル---->
+	<link rel="stylesheet" href="css/common.css">
+	<!--ページののスタイル---->
+	<link rel="stylesheet" href="css/contact.css">
+	<!--フォントのスタイル---->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.6.0.js" defer></script>
+	<script src="js/common.js" defer></script>
+</head>
+
+<body>
+
+	<header>
+
+		<h1 class="logo"><a href="top.html">huwari</a></h1>
+	</header>
+	<nav id="gnav">
+		<ul class="clearfix">
+			<li class="top"><a href="top.html" data-nav-section="top"><span class="en" onMouseOver="this.innerText='トップ'"
+						onMouseOut="this.innerText='TOP'">TOP</span></a></li>
+
+			<li class="about"><a href="about.html" data-nav-section="about"><span class="en"
+						onMouseOver="this.innerText='店舗概要'" onMouseOut="this.innerText='ABOUT'">ABOUT</span></a></li>
+
+			<li class="school"><a href="school.html" data-nav-section="school"><span class="en"
+						onMouseOver="this.innerText='スクール'" onMouseOut="this.innerText='SCHOOL'">SCHOOL</span></a></li>
+
+			<li class="shop"><a href="shop.html" data-nav-section="shop"><span class="en" onMouseOver="this.innerText='取扱商品'"
+						onMouseOut="this.innerText='SHOP'">SHOP</span></a></li>
+
+			<li class="contact"><a href="contact.html" data-nav-section="contact"><span class="en"
+						onMouseOver="this.innerText='お問い合わせ'" onMouseOut="this.innerText='CONTACT'">CONTACT</span></a></li>
+
+			<li class="login"><a href="login.html" data-nav-section="login"><span class="en"
+						onMouseOver="this.innerText='ログイン'" onMouseOut="this.innerText='LOGIN'">LOGIN</span></a></li>
+		</ul>
+	</nav>
+	<!-- sumafo&ipad -->
+	<nav class="menu2">
+		<input type="checkbox" id="input">
+		<label for="input">
+			<div class="iti">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</label>
+
+		<div id="content">
+			<p class="menu3">メニュー</p>
+			<ul class="nav1">
+				<li><a href="top.html">TOP</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="school.html">SCHOOL</a></li>
+				<li><a href="shop.html">SHOP</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="login.html">LOGIN</a></li>
+			</ul>
+
+
+		</div>
+	</nav>
+
+
+	<main>
+		<h2>お問合せ</h2>
+		<div class="step">
+			<img src="images/step1.gif" alt="ステップ１：入力">
+		</div>
+		<form method="post" action="#">
+			<table border="1">
+				<tr>
+					<th>
+						<p><label>
+
+								お名前
+					</th>
+					<td><span class="req">必須</span><input type="text" name="username" placeholder="(例)山田太郎"></label><br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（全角）</p>
+
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<p><label>
+
+								フリガナ
+					</th>
+					<td><span class="req">必須</span><input type="text" name="hurigana"
+							placeholder="(例)ヤマダタロウ"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（全角）</label></p>
+					</td>
+				</tr>
+				<th>
+					<p><label>
+							メールアドレス
+				</th>
+				<td><span class="req">必須</span><input type="email" name="email"
+						placeholder="yamada@gmail.com"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(半角英数)
+					</lavel>
+					</p>
+				</td>
+				<tr>
+					<th>
+						<p><label>
+								電話番号
+					</th>
+					<td><span class="req1">任意</span><input type="tel" name="tel"
+							placeholder="00012345678"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（半角数字10桁～11桁)</label>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<p>
+						<p>お問い合わせ種別</p>
+
+					</th>
+					<td><span class="req">必須</span><label>
+							<select name="contact">
+								<option value="1">［選択肢］</option>
+								<option value="2">お選びください</option>
+								<option value="3">ご注文について</option>
+								<option value="4">商品・配送について</option>
+								<option value="5">お支払い方法について</option>
+								<option value="6">変更・キャンセルについて</option>
+								<option value="7">会員登録について</option>
+								<option value="8">このサイトについて</option>
+								<option value="9">ご意見・ご要望 </option>
+							</select>
+						</label></p>
+					</td>
+				</tr>
+				<th>
+					<p class="iti"><label>お問い合わせ内容</p>
+				</th>
+				<td>
+					<p><textarea name="coment" cols="60" rows="10"></textarea></p></label>
+				</td>
+			</table>
+			<h3>個人情報の取り扱いについて</h3>
+			<p class="text1">下記事項をご確認の上、同意していただける場合は[同意する]にチェックを入れてください。</p>
+			<div class="privacy">
+				<table>
+					<tr>
+						<th>1. 基本方針</th>
+					</tr>
+					<tr>
+						<td>
+							当社では、お客様の個人に関する情報（氏名、生年月日、住所、電話番号、メールアドレス、経歴、その他個人の識別を可能にする情報、以下「個人情報」と記載）を適切・厳重に管理し、個人情報の漏洩・改ざん・紛失や、個人情報に対する不正アクセスが起きぬよう安全対策を講じます。
+						</td>
+					</tr>
+
+					<tr>
+						<th>２．個人情報の収集</th>
+					</tr>
+					<tr>
+						<td>当ショップでは商品のご購入、お問合せをされた際にお客様の個人情報を収集することがございます。
+							収集するにあたっては利用目的を明記の上、適法かつ公正な手段によります。
+							当ショップで収集する個人情報は以下の通りです。
+							・お名前、フリガナ
+							・ご住所
+							・お電話番号
+							・メールアドレス
+							・パスワード
+							・配送先情報
+							・当ショップとのお取引履歴及びその内容
+							上記を組み合わせることで特定の個人が識別できる情報</td>
+					</tr>
+
+					<tr>
+						<th>３．個人情報の利用</th>
+					</tr>
+					<tr>
+						<td>当ショップではお客様からお預かりした個人情報の利用目的は以下の通りです。
+							・ご注文の確認、照会
+							・商品発送の確認、照会
+							・お問合せの返信時
+
+							当ショップでは、下記の場合を除いてはお客様の断りなく第三者に個人情報を開示・提供することはいたしません。
+							・法令に基づく場合、及び国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合
+							・人の生命、身体又は財産の保護のために必要がある場合であって、本人の同意を得ることが困難である場合
+							・当ショップを運営する会社の関連会社で個人データを交換する場合</td>
+					</tr>
+
+					<tr>
+						<th>４．個人情報の安全管理</th>
+					</tr>
+					<tr>
+						<td>
+							お客様よりお預かりした個人情報の安全管理はサービス提供会社によって合理的、組織的、物理的、人的、技術的施策を講じるとともに、当ショップでは関連法令に準じた適切な取扱いを行うことで個人データへの不正な侵入、個人情報の紛失、改ざん、漏えい等の危険防止に努めます。
+						</td>
+					</tr>
+
+					<tr>
+						<th>５．個人情報の訂正・削除</th>
+					</tr>
+					<tr>
+						<td>お客様からお預かりした個人情報の訂正・削除は下記の問合せ先よりお知らせ下さい。</td>
+					</tr>
+
+					<tr>
+						<th>６．お問合せ先</th>
+					</tr>
+					<tr>
+						<td>〒000-0000 渋谷区渋谷
+							TEL. 000-000-0000
+							FAX. 000-000-0000
+							E-Mail. infohuwari.com</td>
+					</tr>
+
+					<tr>
+						<th>７．「個人情報保護に関する方針」の変更</th>
+					</tr>
+					<tr>
+						<td>当ショップでは、収集する個人情報の変更、利用目的の変更、またはその他「個人情報保護に関する方針」の変更を行う際は、当ページへの変更をもって公表とさせていただきます。</td>
+					</tr>
+
+				</table>
+			</div>
+			<p class="check"><span class="req">必須</span><input type="checkbox" name="policy" value="policy">個人情報の取扱いに同意する</p>
+			<p class="text2">[入力内容の確認画面へ] ボタンをクリックして入力内容のご確認をお願いします。 ご入力、誠にありがとうございました。</P>
+			<p><label><button type="submit">入力内容の確認画面へ</button></label></p>
+
+
+		</form>
+	</main>
+
+
+	<div id="wrap">
+		<ul class="clearfix">
+			<li><a href="top.html">トップ</a></li>
+			<li><a href="about.html">店舗概要</a></li>
+			<li><a href="school.html">スクール</a></li>
+			<li><a href="shop.html">取扱商品</a></li>
+			<li><a href="contact.html">お問い合わせ</a></li>
+			<li><a href="policy.html">プライバシーポリシー</a></li>
+			<li><a href="tokutei.html">特定商取引法に関する表記</span></a></li>
+
+		</ul>
+	</div>
+
+	<!-- page topボタン -->
+	<div class="page-top">
+		<a href="#top">TOP</a>
+	</div>
+	<footer>
+
+
+
+		<p class="copyright"><small>(c)2020 harayama</small></p>
+	</footer>
+</body>
+
+</html>

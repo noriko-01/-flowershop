@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>school|huwari</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--リセット---->
+  <link rel="stylesheet" href="css/reset.css">
+
+  <!--共通のスタイル---->
+  <link rel="stylesheet" href="css/common.css">
+  <!--ページのスタイル---->
+  <link rel="stylesheet" href="css/school.css">
+  <!--フォントのスタイル---->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+  <script src="js/jquery-3.6.0.js" defer></script>
+  <script src="js/common.js" defer></script>
+  <script src="js/school.js" defer></script>
+</head>
+
+<body>
+  <header>
+
+    <h1 class="logo"><a href="top.html">huwari</a></h1>
+  </header>
+  <!-- pc -->
+  <nav id="gnav">
+    <ul class="clearfix">
+      <li class="top"><a href="top.html" data-nav-section="top"><span class="en" onMouseOver="this.innerText='トップ'"
+            onMouseOut="this.innerText='TOP'">TOP</span></a></li>
+
+      <li class="about"><a href="about.html" data-nav-section="about"><span class="en"
+            onMouseOver="this.innerText='店舗概要'" onMouseOut="this.innerText='ABOUT'">ABOUT</span></a></li>
+
+      <li class="school"><a href="school.html" data-nav-section="school"><span class="en"
+            onMouseOver="this.innerText='スクール'" onMouseOut="this.innerText='SCHOOL'">SCHOOL</span></a></li>
+
+      <li class="shop"><a href="shop.html" data-nav-section="shop"><span class="en" onMouseOver="this.innerText='取扱商品'"
+            onMouseOut="this.innerText='SHOP'">SHOP</span></a></li>
+
+      <li class="contact"><a href="contact.html" data-nav-section="contact"><span class="en"
+            onMouseOver="this.innerText='お問い合わせ'" onMouseOut="this.innerText='CONTACT'">CONTACT</span></a></li>
+
+      <li class="login"><a href="login.html" data-nav-section="login"><span class="en"
+            onMouseOver="this.innerText='ログイン'" onMouseOut="this.innerText='LOGIN'">LOGIN</span></a></li>
+    </ul>
+  </nav>
+  <!-- sumafo&ipad -->
+  <nav class="menu2">
+    <input type="checkbox" id="input">
+    <label for="input">
+      <div class="iti">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </label>
+
+    <div id="content">
+      <p class="menu3">メニュー</p>
+      <ul class="nav1">
+        <li><a href="top.html">TOP</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="school.html">SCHOOL</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+      </ul>
+
+
+    </div>
+  </nav>
+  <main>
+    <ul class="contents">
+      <li class="top-text">
+        <img src="images/item/lesson11.jpg" alt="花束の写真" class="top-text-img anime2">
+        <div class="contentsText">
+          <h3 class="anime1">Bouquet lesson</h3>
+          <h3 class="anime1"><span>ブーケレッスン<span></h3>
+          <div class="s2 anime1">
+            <p class="anime1">コース説明：<br>
+              ”旬”の人気花材で作成します。<br>
+              花屋のプロが教えます。<br>
+              ご自分、ご家族、お友達の為に、オリジナルブーケをつくってみませんか？<br>
+              受講費：3500円～/回（花材・花器・レッスン料込み）</p>
+            <dl class="anime1">
+              <dt>・月2回コース（月曜日）</dt>
+              <dd>【午前の部】09:00～10:30</dd>
+              <dd>【午後の部】19:00～20:30</dd>
+              <dt>・月1回コース（火曜日）</dt>
+              <dd>10:00～11:30</dd>
+            </dl>
+          </div>
+        </div>
+        </div>
+      </li>
+
+      <li class="animationTarget">
+        <img src="images/item/lesson10.jpg" alt="ブーケの花の写真" class="">
+        <div class="contentsText">
+          <h3>Bridal lesson</h3>
+          <h3><span>ブライダルレッスン</span></h3>
+
+          <div class="s2">
+            <p>コース説明：<br>
+              ブライダル専門の講師をお呼びするので基礎から応用まで学べます。<br>
+              ブライダルの資格をとることもできます。<br>
+              受講費：5500円～/回（花材・花器・レッスン料込み）</p>
+            <dl>
+              <dt>・月2回コース（日曜日）</dt>
+              <dd>【午前の部】08:00～10:30</dd>
+              <dd>【午後の部】18:00～20:30</dd>
+            </dl>
+          </div>
+        </div>
+
+        </div>
+      </li>
+
+      <li class="animationTarget">
+        <img src="images/item/lesson12.jpg" alt="花瓶に入ってる花の写真" class="">
+        <div class="contentsText">
+          <h3>Preserved flower lesson</h3>
+          <h3><span>ブリザーブドフラワーレッスン</span></h3>
+
+          <div class="s2">
+            <p>コース説明：<br>
+              生花のような美しいドライフラワーを作りませんか？<br>
+              基礎から、学べます。<br>
+              受講費：2500円～/回（花材・花器・レッスン料込み）</p>
+            <dl>
+              <dt>・月2回コース（土曜日）</dt>
+              <dd>【午前の部】11:00～12:30</dd>
+              <dd>【午後の部】20:00～21:30</dd>
+              <dt>・月1回コース（水曜日）</dt>
+              <dd>16:00～17:30</dd>
+            </dl>
+          </div>
+        </div>
+        </div>
+      </li>
+
+      <li class="animationTarget">
+        <img src="images/item/lesson13.jpg" alt="花束の写真" class="">
+        <div class="contentsText">
+          <h3>Interior lesson</h3>
+          <h3><span>インテリアレッスン</span></h3>
+
+          <div class="s2">
+            <p>コース説明：<br>
+              インテリアデザイナーの講師をお呼びして、基礎から応用まで学べます。<br>
+              お花を飾ってより素敵なお部屋にしましょう。<br>
+              受講費：4500円～/回（花材・花器・レッスン料込み）</p>
+            <dl>
+              <dt>・月2回コース（土曜日）</dt>
+              <dd>【午前の部】10:00～11:30</dd>
+              <dd>【午後の部】19:00～20:30</dd>
+              <dt>・月1回コース（金曜日）</dt>
+              <dd>10:00～11:30</dd>
+            </dl>
+          </div>
+        </div>
+        </div>
+      </li>
+
+    </ul>
+    <p><label><button type="submit">フラワーレッスンに関するお問合せ</button></label></p>
+
+  </main>
+
+
+  <div id="wrap">
+    <ul class="clearfix">
+      <li><a href="top.html">トップ</a></li>
+      <li><a href="about.html">店舗概要</a></li>
+      <li><a href="school.html">スクール</a></li>
+      <li><a href="shop.html">取扱商品</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li><a href="policy.html">プライバシーポリシー</a></li>
+      <li><a href="tokutei.html">特定商取引法に関する表記</a></li>
+
+    </ul>
+  </div>
+  <!-- page topボタン -->
+  <div class="page-top">
+    <a href="#top">TOP</a>
+  </div>
+  <footer>
+    <p class="copyright"><small>(c)2020 huwari</small></p>
+  </footer>
+  <script src="js/top.js" charset="UTF-8"></script>
+</body>
+
+</html>

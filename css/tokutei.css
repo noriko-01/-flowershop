@@ -1,0 +1,75 @@
+@charset "UTF-8";
+main h2,p,dl,dd,dt{
+	font-family : 游明朝, "Yu Mincho", 游明朝体, YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HiraMinProN-W3, HGS明朝E, "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	color : #333;
+	line-height : 2em;
+}
+/* main
+---------------------------------------------------------------------- */
+main{
+		width : 100%;
+		margin: 50px 0;
+}
+
+main .th1{
+  border-bottom : solid 2px #d86a2a;
+  border-left : solid 10px #d86a2a;
+  width : 900px;
+  margin : 20px auto 10px;
+  font-size : 30px;
+
+}
+
+
+table{
+  border-collapse : collapse;
+  margin : 0 auto;
+}
+
+table td{
+		padding : 5px;
+
+}
+
+table th{
+    background-color : #dce0ec;
+		text-align : left;
+		padding : 5px;
+
+}
+/* pcのスタイル */
+@media screen and (min-width : 1000px){
+  /* main
+  ------------------------------------ */
+  main p{
+  width : 900px;
+  margin : 20px auto 10px;
+}
+  table{
+    width: 900px;
+  }
+}
+  /*タブレットのスタイル*/
+@media screen and (min-width : 560px) and (max-width : 999px){
+  /* main
+  ------------------------------------ */
+  main p{
+  width : 100%;
+  margin : 20px auto 10px;
+}
+table{
+    width: 96%;
+  }
+}
+  /*スマホのスタイル*/
+@media screen and (max-width : 559px){
+  /* main
+  ------------------------------------ */
+   main p{
+  width : 100%;
+  margin : 20px auto 10px;
+}
+  table{
+    width: 96%;
+  }
+}

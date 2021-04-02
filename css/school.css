@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* 全体領域 */
+body{
+  font-family : 游明朝, "Yu Mincho", 游明朝体, YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HiraMinProN-W3, HGS明朝E, "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	background-color: rgb(255, 255, 255);
+  color: rgb(34, 34, 34);
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+.contents li{
+  position: relative;
+}
+.contents li:not(:first-of-type).show h3,.contents li:not(:first-of-type).show p,.contents li:not(:first-of-type).show dl,main .contents li:not(:first-of-type).show img,.contents li:not(:first-of-type).show .s2{
+  opacity: 1;
+  transform: none;
+}
+
+.contents li:first-of-type{
+  margin-top: 100px;
+}
+.contents li:not(:first-of-type){
+  margin-top: 200px;
+}
+.contents li:nth-of-type(odd) .contentsText{
+right: 0;
+}
+.contents li:nth-of-type(even) .contentsText{
+  align-items: flex-start;
+}
+.contents li:nth-of-type(add) img{
+  transform: translate(-20px, -20px);
+}
+.contents li:nth-of-type(even) img{
+margin-left: auto;
+transform: translate(20px, 20px);
+}
+
+
+.contentsText{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  position: absolute;
+  top: 40px;
+}
+
+.contents h3{
+  color:rgba(233, 124, 0, 0.76);
+  font-size: 70px;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 5px 20px;
+  line-height: 0.5;
+  letter-spacing: .05em;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+
+
+main .top-text h3,main .top-text .top-text-img,main .top-text .s2,main .top-text p,main .top-text dl{
+  opacity:1;
+}
+@keyframes fadein {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+.anime1{
+  animation-name: fadein;
+    animation-duration: 2s;
+}
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: translate(-20px, -20px);
+}
+to {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+}
+.anime2{
+  animation-name: fadeIn;
+    animation-duration: 2s;
+}
+main .top-text .s2{
+  height: 438px;
+}
+main .top-text p,main .top-text dl{
+  margin-top:0;
+}
+
+main .contents h3 span{
+  font-size: 30px;
+  color: rgb(114, 116, 28);
+  text-align: right;
+}
+.contents p,.contents dl{
+  line-height: 1.6;
+  background-color:#fff;
+  font-size: 18px;
+  max-width: 340px;
+  padding: 15px;
+  margin-top : 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+  color:#333;
+}
+
+.contents dl{
+  margin-top:0;
+}
+.contents .s2{
+  margin-top: 70px;
+  background-color: #ffd9cdec;
+    background-image:
+   repeating-linear-gradient(-45deg,
+   #fff, #fff 5px,
+   transparent 9px, transparent 14px);
+   opacity: 0;
+   transition: 1s;
+   transform: translateY(20px);
+   border-radius: 5px;
+}
+
+.contents img{
+  width: 65%;
+  border-radius: 5px;
+  display: block;
+  opacity: 0;
+  transition: 1s 0.5s;
+}
+/* ボタンタグ
+--------------------------------------------------- */
+button{
+	  /* width: 500px; */
+    height: 55px;
+    background-color: rgba(247, 148, 83, 0.699);
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 10px;
+		font-family : 游明朝, "Yu Mincho", 游明朝体, YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HiraMinProN-W3, HGS明朝E, "ＭＳ Ｐ明朝", "MS PMincho", serif;
+		margin: 80px auto;
+		display: block;
+		border-color:rgba(247, 148, 83, 0.699) ;
+}
+
+button:hover{
+	background-color: #fff;
+	color:  rgb(247, 149, 83);
+}
+/* pcのスタイル */
+@media screen and (min-width : 1000px){
+	/* main
+	------------------------------------ */
+ main{
+   max-width: 1000px;
+   width: 100%;
+   margin: 20px auto;
+   height: 100%;
+ }
+/* ボタン
+---------------------------------------- */
+button{
+  width: 500px;
+}
+}
+/*タブレットのスタイル*/
+
+@media screen and (min-width : 560px) and (max-width : 999px){
+  #content,.iti {
+    z-index: 1;
+  }
+	/* main
+	-------------------------------- */
+main{
+  width: 90%;
+  margin: 0 auto;
+}
+.contents h3{
+  color:rgba(233, 124, 0, 0.877);
+  font-size: 60px;
+}
+.contents img{
+  width: 65%;
+}	
+button{
+  width: 310px;
+  margin-top: 300px;
+  font-size: 18px;
+}
+}
+/*スマホのスタイル*/
+@media screen and (max-width : 559px){
+   #content,.iti {
+    z-index: 1;
+  }
+	/* main
+	-------------------------------- */
+  main{
+  width: 90%;
+  margin: 0 auto;
+}
+.contents li:first-of-type{
+  margin-top: 100px;
+}
+.contents li:not(:first-of-type){
+  margin-top: 600px;
+}
+	.contents h3{
+  color:rgba(255, 168, 70, 0.877);
+  font-size: 36px;
+   border-radius: 5px;
+   padding: 5px 0;
+}
+main .contents h3 span{
+  font-size: 20px;
+}
+main .top-text .s2{
+  margin-right: 0;
+}
+.contents li:nth-of-type(odd) .contentsText{
+right: 50px;
+}
+.contents li:nth-of-type(even) .s2{
+  margin-left: 50px;
+}
+.contentsText{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  position: absolute;
+  top: 300px;
+}
+button{
+  width: 310px;
+  margin-top: 600px;
+  font-size: 18px;
+}
+}

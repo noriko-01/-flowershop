@@ -1,0 +1,349 @@
+@charset "UTF-8";
+/*header
+----------------------------------------*/
+@keyframes titleAnimation {
+  0% {
+    letter-spacing:0.8em;
+  }
+}
+header .logo a{
+ font-family: 'Dancing Script', cursive;
+text-align : center;
+color: #232324;
+font-size: 40px;
+animation: titleAnimation 1.5s;
+letter-spacing: 0.1em;
+}
+/* メニュー
+------------------------------------------- */
+#warp{
+  width : 100%;
+	line-height: 45px;
+
+}
+#wrap ul{
+width: 80%;
+margin: 0 auto;
+}
+
+#wrap li{
+	width: 14%;
+float: left;
+}
+#wrap li a{
+color: #232324;
+padding-left : 10px;
+text-align : center;
+display:block;
+ font-size : 12px;
+}
+#wrap li{
+	border-left : 1px solid #7e7e7e;
+}
+#wrap li:last-child{
+	border-right : 1px solid #7e7e7e;
+}
+
+/* フッター
+------------------------------------------ */
+footer{
+ width: 100%;
+}
+.copyright{
+ text-align : center;
+ color : #FFF;
+ background-color : #727768; 
+}
+/* ページトップボタン
+-----------------------------------------*/
+.page-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+		z-index: 1;
+}
+.page-top a{
+    border-radius: 50%;
+    background: rgba(51, 51, 51, 0.884);
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/* pcのスタイル */
+@media screen and (min-width : 1000px){
+	/* ナビタグ
+	------------------------------------------ */
+	.menu2 #input{
+		display: none;
+	}
+	
+.nav1,.menu3{
+		display: none;
+	}
+
+#gnav{
+	height: 45px;
+	line-height: 45px;
+width: 100%;
+
+}
+#gnav ul{
+	width : 849px;
+margin: 12px 0px 11px 575px;
+
+}
+
+#gnav li{
+ width : 14%;
+ float : left;
+
+
+
+}
+#gnav li a{
+ color: #727768;
+ font-weight :bold;
+ font-size : 15px;
+ font-family: 'Arial', sans-serif,Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo;
+ text-align: center;
+}
+#gnav .login a {
+    
+    color: #FFF;
+    background-color: #363636;
+    border-radius: 12px;
+		margin : 5px;
+}
+
+
+
+
+
+}
+
+
+/*タブレットのスタイル*/
+
+@media screen and (min-width : 560px) and (max-width : 999px){
+	/* ナビタグ
+	------------------------------------------- */
+#gnav{
+	display: none;
+}
+/* <!-- sumafo&ipad --> */
+#input{
+	display: none;
+}
+
+.iti{
+position: absolute;
+	top: 15px;
+    right: 6px;
+		position: fixed;
+		background-color: rgba(255, 255, 255, 0.883);
+}
+
+
+.line{
+width: 40px;
+height: 4px;
+background-color: #232324;
+margin: 5px;
+border-radius: 10px;
+
+}
+
+
+
+#content{
+	background-color: #232324;
+	color: #fff;
+	width: 30%;
+	height: 60%;
+	transform: translateX(106%);
+	transition: 0.3s ease-in-out;
+	top: 15px;
+    right:6px;
+		position: fixed;
+		margin-top: 47px;
+}
+
+
+#input:checked~#content{
+transform: translateX(0);
+transition: 0.3s ease-in-out;
+top: 15px;
+right: 6px;
+position: fixed;
+}
+
+#content .menu3{
+	border-bottom : #fff dotted 1px;
+	margin: 10px 0 5px 0;
+	z-index: 1;
+	color: #fff;
+}
+#content ul li{
+	border-bottom: #fff 1px dotted;
+}
+
+
+#content ul li a{
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+}
+#content ul li a:hover{
+	color:#232324;
+	background-color: #fff;
+	
+}
+/* main
+------------------------------------------ */
+main{
+	width: 100%;
+}
+p{
+	text-align: center;
+
+}
+
+/* メニュー
+---------------------------------------------- */
+#wrap{
+	background-color: #FFF;
+}
+}
+
+/*スマホのスタイル*/
+@media screen and (max-width : 559px){
+	/* ナビタグ
+	------------------------------------------------- */
+	#gnav{
+	display: none;
+}
+/* <!-- sumafo&ipad --> */
+.iti{
+	top: 15px;
+    right:6px;
+			position: fixed;
+			background-color: rgba(255, 255, 255, 0.787);
+}
+	#input{
+	display: none;
+	}
+.line{
+width: 40px;
+height: 4px;
+background-color: #232324;
+margin: 5px;
+border-radius: 10px;
+
+}
+#content{
+	background-color: #232324;
+	color: #fff;
+	width: 30%;
+	height: 60%;
+	transform: translateX(106%);
+	transition: .3s ease-in-out;
+	top: 15px;
+    right: 6px;
+			position: fixed;
+			margin-top: 47px;
+}
+#content .menu3{
+	border-bottom : #fff dotted 1px;
+	margin: 10px 0 5px 0;
+	z-index: 1;
+	color: #fff;
+}
+
+#input:checked~#content{
+
+transform: translateX(0);
+transition: .3s ease-in-out;
+top: 15px;
+right: 6px;
+			position: fixed;
+}
+#content ul li{
+	border-bottom: #fff 1px dotted;
+}
+
+
+#content ul li a{
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+}
+#content ul li a:hover{
+	color:#232324;
+	background-color: #fff;
+	
+}
+
+/*main
+-----------------*/
+main{
+	width: 100%;
+}
+	h2{
+		text-align: center;
+		margin: 20px 0;
+	}
+ p{
+	 text-align: center;
+	 width:100%;
+	 font-family: 'Arial', sans-serif,Verdana, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo;
+ }
+
+ 
+	
+
+p{
+	text-align: center;
+}
+
+/* メニュー
+------------------------------------------------------- */
+#wrap{
+	background-color: #FFF;
+}
+#wrap ul{
+width: 90%;
+margin: 0 auto;
+}
+
+#wrap li{
+	width: 45%;
+float: left;
+}
+
+#wrap li a{
+color: #232324;
+padding : 5px;
+text-align : center;
+display:block;
+ font-size : 12px;
+ text-align: left;
+
+}
+#wrap li{
+	border-left : none
+}
+#wrap li:last-child{
+	border-right : none
+}
+
+
+}

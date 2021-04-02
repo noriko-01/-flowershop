@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*main
+------------------------------------------*/
+main{
+	width : 100%;
+	margin:0 auto;
+	height: 1000px;
+}
+
+h2{
+	margin-top: 10px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+
+/*form
+--------------------------------------*/
+.login-box{
+	width : 50%;
+	margin : 0 auto;
+}
+
+main a{
+ text-decoration : none;
+ color : #333;
+ 	width : 50%;
+	margin : 0 auto;
+	display : block;
+
+}
+
+th,td{
+	padding: 10px 0;
+}
+/* ボタン
+------------------------- */
+.btn-login{
+	background-color: #333;
+	color: #fff;
+}
+.btn-login:hover{
+	background-color:#fff;
+	color:#333;
+}

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* main
+------------------------------------------------------- */
+main{
+		width : 100%;
+    margin: 50px 0;
+}
+
+
+main .th1{
+  border-bottom : solid 2px #d32726;
+  border-left : solid 10px #d32726;
+  margin : 20px auto 10px;
+  font-size : 30px;
+
+}
+
+main p{
+  
+  width : 900px;
+  margin : 20px auto 10px;
+
+}
+table{
+  border-collapse : collapse;
+  margin : 0 auto;
+}
+
+table td{
+		padding : 5px;
+
+}
+
+table th{
+    background-color : #e9dceb;
+		text-align : left;
+		padding : 5px;
+
+}
+/* pcのスタイル */
+@media screen and (min-width : 1000px){
+  /* main
+  ------------------------------------ */
+   table{
+    width: 900px;
+  }
+  main .th1{
+  width: 70%;
+}
+}
+  /*タブレットのスタイル*/
+@media screen and (min-width : 560px) and (max-width : 999px){
+  /* main
+  ------------------------------------ */
+  main .th1{
+  width: 80%;
+}
+   main p{
+  width : 100%;
+  margin : 20px auto 10px;
+}
+table{
+    width: 96%;
+  }
+}
+  /*スマホのスタイル*/
+@media screen and (max-width : 559px){
+  /* main
+  ------------------------------------ */
+  main .th1{
+  width: 90%;
+}
+   main p{
+  width : 100%;
+  margin : 20px auto 10px;
+}
+  table{
+    width: 96%;
+  }
+}
+

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+html,body,h1,h2,h3,h4,h5,h6,/*多くなるので改行*/
+p,div,table,th,td,ul,ol,li,
+form,header,nav,main,footer{
+ margin : 0;
+ padding : 0;
+}
+
+header,nav,main,footer,ul,li,img,a{
+ display : block;
+}
+
+nav li{
+	list-style-type : none;
+
+}
+
+a{
+ text-decoration : none;
+
+}
