@@ -214,13 +214,13 @@ button{
   margin-top: 100px;
 }
 .contents li:not(:first-of-type){
-  margin-top: 600px;
+  margin-top: 800px;
 }
 	.contents h3{
   color:rgba(255, 168, 70, 0.877);
-  font-size: 36px;
+  font-size: 33px;
    border-radius: 5px;
-   padding: 5px 0;
+   padding: 2px 0;
 }
 main .contents h3 span{
   font-size: 20px;
@@ -229,10 +229,10 @@ main .top-text .s2{
   margin-right: 0;
 }
 .contents li:nth-of-type(odd) .contentsText{
-right: 50px;
+right: 0%;
 }
 .contents li:nth-of-type(even) .s2{
-  margin-left: 50px;
+  margin-left: 0%;
 }
 .contentsText{
   display: flex;
@@ -243,7 +243,7 @@ right: 50px;
 }
 button{
   width: 310px;
-  margin-top: 600px;
+  margin-top: 800px;
   font-size: 18px;
 }
 }
