@@ -19,25 +19,23 @@ header .logo a{
 main{
 	width: 100%;
 	margin-top: 50px;
-	height: 600px;
-
+	height:100vh;
 }
 .box{
-	width:80%;
+	width:90%;
 	margin: 0 auto;
 	background-color: rgba(255, 255, 255, 0.829);
 	border-radius: 5px;
 	padding: 20px 10px;
 }
 .box-img{
-width:300px;
-
+width:400px;
+padding-left: 30px;
 }
+
 .box-text{
-width: 400px;
+width: 600px;
 padding:10px 50px;
-
-
 }
 
 .box-text,.box-img{
