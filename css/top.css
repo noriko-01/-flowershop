@@ -1,7 +1,9 @@
 @charset "UTF-8";
 /*共通
 ------------------*/
-
+*{
+	box-sizing: border-box;
+}
 /*ボタン
 -------------------*/
 .button{
@@ -50,8 +52,9 @@
 ---------------------------------------*/
 .pic1{
 	display: block;
-	width: 710px;
-  margin: 50px auto;
+	width: 60%;
+  margin: 0 auto;
+	padding: 20px 0 10px;
 }
 /*main
 ---------------------------------------*/
@@ -63,36 +66,42 @@ main h2,p{
 	color : #232324;
 	line-height : 2em;
 }
+
 .box{
-	width : 80%;
-	margin: 62px;
-    margin-left: 260px;
+	display:block;
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
 }
-
 .box-img img{
-	width : 600px;
-	height : 303px;
+	object-fit : cover;
+	width :340px;
+	height: 303px;
+	padding: 50px 30px 0;
 }
-.box-text,.box-img{
-	display : inline-block;
-	vertical-align: middle;
-}
-.box-text{
-	    margin-right: 100px;
-}
-.box-text1,.box-img1{
-	display : inline-block;
-	vertical-align: middle;
 
+.box-text{
+	text-align:left;
+	padding: 50px 50px 0;
 }
-.box1 {
-    width: 80%;
-    margin: 20px;
-    margin-left: 146px;
+.box1{
+	display:block;
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
 }
+.box-img1 img{
+	object-fit : cover;
+	width :340px;
+	height: 303px;
+		padding: 50px 30px 0;
+}
+
 .box-text1{
-	padding-left: 40px;
+	text-align:left;
+	padding: 50px 50px 0;
 }
+
 
 /*news
 ------------------------------------------*/
@@ -120,7 +129,7 @@ margin: 31px 27px;
  font-family:'Arial', sans-serif,Verdana, "ヒラギノ角ゴ ProN W3",  メイリオ, Meiryo;
      margin: 10px 0 10px 145px;
 		 border-bottom : solid 2px #727768;
-		 width : 1100px;
+		 width : 80%;
 }
 .article1 p{
 	text-align : left;
@@ -156,8 +165,8 @@ margin-top : 12px;
 ---------------------------------------*/
 .pic1{
 	display: block;
-	width: 510px;
-  margin: 50px auto;
+	width: 80%;
+  margin: 40px auto;
 }
 	/* フォントスタイル 
 	-----------------------------------------------------*/
@@ -214,8 +223,9 @@ font-size: 40px;
 ---------------------------------------*/
 .pic1{
 	display: block;
-	width: 410px;
-  margin: 50px auto;
+	width: 80%;
+  margin: 0 auto;
+	padding: 20px 0 10px;
 }
 	/* フォントスタイル 
 	-----------------------------------------------------*/
