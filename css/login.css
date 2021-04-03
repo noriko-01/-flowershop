@@ -4,13 +4,23 @@
 main{
 	width : 100%;
 	margin:0 auto;
-	height: 1000px;
+	height: 100vh;
+}
+
+table{
+	width: 80%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+table,th,td{
+	border: none;
+	padding: 10px;
 }
 
 h2{
 	margin-top: 10px;
-	width: 50%;
-	margin: 0 auto;
+	font-size: 32px;
+	text-align: center;
 }
 
 
@@ -42,4 +52,28 @@ th,td{
 .btn-login:hover{
 	background-color:#fff;
 	color:#333;
+}
+/*スマホのスタイル*/
+@media screen and (max-width : 559px){
+	table{
+	width: 80%;
+	margin: 20px auto 40px;
+	border-collapse: collapse;
+}
+
+
+table th{
+	display: block;
+	width: 100%;
+	background-color: #EAEAEA;
+}
+
+
+
+ table td{
+	width: 100%;
+	display: block;
+  padding: 10px 0;
+	text-align: center;
+}
 }
