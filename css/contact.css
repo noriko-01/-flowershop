@@ -17,7 +17,8 @@ h2{
 	font-size : 40px;
 	font-weight: bold;
 	text-align: center;
-	width: 87%;
+	width: 200px;
+   margin: 0 auto;
 }
 h3{
 
@@ -138,7 +139,7 @@ table textarea{
 
 .check{
 	text-align: center;
-	width: 90%;
+	width: 100%;
 }
 /* ボタンタグ
 --------------------------------------------------- */
@@ -151,7 +152,8 @@ button{
     font-size: 24px;
     border-radius: 10px;
 		margin-top: 20px;
-		margin-left: 37%;
+		display: block;
+		margin: 0 auto;
 		font-family : 游明朝, "Yu Mincho", 游明朝体, YuMincho, "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", HiraMinProN-W3, HGS明朝E, "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 }
