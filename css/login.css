@@ -48,11 +48,12 @@ th,td{
 .btn-login{
 	background-color: #333;
 	color: #fff;
+	margin-left: 60%;
 }
 .btn-login:hover{
 	background-color:#fff;
 	color:#333;
-	margin-left: 60%;
+	
 }
 /*スマホのスタイル*/
 @media screen and (max-width : 559px){
